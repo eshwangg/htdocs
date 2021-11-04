@@ -40,7 +40,6 @@
                     </div>
                     
                 </form>
-                <?php echo $board['top']?>
             </div>
         </div>
     </body>

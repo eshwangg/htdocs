@@ -25,13 +25,16 @@
     <table class="list-table">
       <thead>
           <tr>
-              <th width="70">번호</th>
+              <!-- <th width="70">번호</th> -->
                 <th width="500">제목</th>
                 <th width="120">글쓴이</th>
                 <th width="100">작성일</th>
             </tr>
         </thead>
         <?php
+          
+
+
           $sql2 = mq("select * from board where $catagory like '%$search_con%' order by idx desc");
           while($board = $sql2->fetch_array()){
            
@@ -44,7 +47,7 @@
         ?>
       <tbody>
         <tr>
-          <td width="70"><?php echo $board['idx']; ?></td>
+          <!-- <td width="70"><?php echo $board['top']; ?></td> -->
           <td width="500">
             <?php 
 

@@ -18,8 +18,8 @@
                 <th width="500">제목</th>
                 <th width="120">글쓴이</th>
                 <th width="100">작성일</th>
-                <th width="100">top</th>
-                <th width="100">level</th>
+                <!-- <th width="100">top</th>
+                <th width="100">level</th> -->
             </tr>
         </thead>
         <?php
@@ -62,8 +62,8 @@
           <a href="/page/board/read.php?idx=<?php echo $board["idx"];?>"><?php echo $title;?></a></td>
           <td width="120"><?php echo $board['name']?></td>
           <td width="100"><?php echo $board['date']?></td>
-          <td width="100"><?php echo $board['top']?></td>
-          <td width="100"><?php echo $board['level']?></td>
+          <!-- <td width="100"><?php echo $board['top']?></td>
+          <td width="100"><?php echo $board['level']?></td> -->
 
         </tr>
       </tbody>

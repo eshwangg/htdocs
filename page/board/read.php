@@ -39,7 +39,7 @@
 		<ul>
 			<li><a href="/">[목록으로]</a></li>
 			<!-- <li><a href="thread.php?idx=<?php echo $board['idx']; ?>">[답글]</a></li> -->
-			<li><a href="thread.php?idx=<?php echo $board['idx']?>&top=<?php echo $board['top']?>&level=<?php echo $board['level']+1 ?>">[답글]</a></li>
+			<li><a href="thread.php?idx=<?php echo $board['idx']?>&top=<?php echo $board['top']?>">[답글]</a></li>
 			<li><a href="modify.php?idx=<?php echo $board['idx']; ?>">[수정]</a></li>
 			<li><a href="delete.php?idx=<?php echo $board['idx']; ?>">[삭제]</a></li>
 
