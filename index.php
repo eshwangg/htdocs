@@ -18,9 +18,14 @@
                 <th width="500">제목</th>
                 <th width="120">글쓴이</th>
                 <th width="100">작성일</th>
+                <th width="100">top</th>
+                <th width="100">level</th>
             </tr>
         </thead>
         <?php
+
+            $cnt = 0;
+
             if(isset($_GET['page'])){
               $page = $_GET['page'];
                 }else{
@@ -40,7 +45,7 @@
                   $total_block = ceil($total_page/$block_ct);
                   $start_num = ($page-1) * $list; 
 
-                  $sql2 = mq("select * from board order by idx desc limit $start_num, $list");  
+                  $sql2 = mq("select * from board order by top desc limit $start_num, $list");  
                   while($board = $sql2->fetch_array()){
                   $title=$board["title"]; 
                     if(strlen($title)>30)
@@ -51,14 +56,17 @@
                   ?>
      <tbody>
         <tr>
-          <td width="70"><?php echo $board['idx']; ?></td>
+          <td width="70"><?php echo   $list  - $cnt; ?></td>
           <td width="500"><a href="/page/board/read.php?idx=<?php echo $board["idx"];?>"><?php echo $title;?></a></td>
           <td width="120"><?php echo $board['name']?></td>
           <td width="100"><?php echo $board['date']?></td>
+          <td width="100"><?php echo $board['top']?></td>
+          <td width="100"><?php echo $board['level']?></td>
 
         </tr>
       </tbody>
-      <?php } ?>
+      <?php $cnt ++;
+    } ?>
     </table>
     <div id="page_num">
         <?php

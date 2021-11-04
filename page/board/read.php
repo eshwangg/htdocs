@@ -38,7 +38,8 @@
 	<div id="bo_ser">
 		<ul>
 			<li><a href="/">[목록으로]</a></li>
-			<li><a href="thread.php?idx=<?php echo $board['idx']; ?>">[답글]</a></li>
+			<!-- <li><a href="thread.php?idx=<?php echo $board['idx']; ?>">[답글]</a></li> -->
+			<li><a href="write.php?idx=<?php echo $board['idx']?>&top=<?php $board['top']?>&level=<?php $board['level']+1 ?>">[답글]</a></li>
 			<li><a href="modify.php?idx=<?php echo $board['idx']; ?>">[수정]</a></li>
 			<li><a href="delete.php?idx=<?php echo $board['idx']; ?>">[삭제]</a></li>
 
