@@ -1,0 +1,23 @@
+create table board;
+
+
+CREATE TABLE board (
+ 
+`idx` int(11) unsigned NOT NULL AUTO_INCREMENT,
+ 
+`name` varchar(100),
+ 
+`title` varchar(100),
+
+`content` TEXT,
+
+`date` date,
+
+`top` int(11),
+
+`level` int(10),
+
+ 
+primary key(`idx`)
+ 
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8
