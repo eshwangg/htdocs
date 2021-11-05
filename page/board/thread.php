@@ -16,6 +16,7 @@
 	?>
 	
     <div id="board_write">
+        <br>
         <h1><a href="/">공지 사항</a></h1>
         <br>
         <h4>공지 사항 답글달기.</h4>

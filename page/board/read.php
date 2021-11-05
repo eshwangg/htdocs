@@ -24,6 +24,7 @@
 	<br>
 	<h2>제목 : <?php echo $board['title']; ?></h2>
 	<br>
+
 		<div id="user_info">
 			작성자 : <?php echo $board['name']; ?><br>
 			날짜 : <?php echo $board['date']; ?> 

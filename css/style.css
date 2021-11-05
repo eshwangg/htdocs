@@ -148,10 +148,11 @@ ul li {
 }
 #user_info {
 	font-size:14px;
+
 }
 #user_info ul li {
 	float:left;
-	margin-left:10px;
+	margin-left:0px;
 }
 #bo_line {
 	width:900px;
